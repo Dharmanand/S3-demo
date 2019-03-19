@@ -10,8 +10,8 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 public class AWSUtility {
 
 	public static AmazonS3 getS3CredentialObj() {
-		AWSCredentials credentials = new BasicAWSCredentials("AKIAIWTS3NV7F23VRCBQ",
-				"6hO4bVcjOhaffahWB0sWhxfh+cSxcf9pB5vhOMM9");
+		AWSCredentials credentials = new BasicAWSCredentials("accessKey",
+				"secretKey");
 		
 		AmazonS3 s3 = AmazonS3ClientBuilder.standard()
 				.withCredentials(new AWSStaticCredentialsProvider(credentials))
